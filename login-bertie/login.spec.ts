@@ -3,7 +3,6 @@ import { test } from '@playwright/test';
   
   test('login to bertie', async ({ page }) => {
     const loginPage = new LoginPage(page);
-    
     await loginPage.goto();
     await loginPage.login('test.test@test.co', '*********');
     await loginPage.selectOption();

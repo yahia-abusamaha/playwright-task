@@ -2,7 +2,7 @@ import { Page } from '@playwright/test';
 
 export class LoginPage {
   readonly page: Page;
-  readonly bertieUrl = 'https://stage-bertie.forbes.com/#/login';
+  readonly bertieUrl = '#/login';
   readonly emailInput = 'input[name="identifier"]';
   readonly bertieInput = 'input[name="email"]';
   readonly bertieLogin = 'button[type="submit"]';
